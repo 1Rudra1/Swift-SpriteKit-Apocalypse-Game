@@ -14,6 +14,9 @@
 		177943C0279B4E4E00FFF1C7 /* The_Apocalypse_GameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177943BF279B4E4E00FFF1C7 /* The_Apocalypse_GameTests.swift */; };
 		177943CA279B4E4E00FFF1C7 /* The_Apocalypse_GameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177943C9279B4E4E00FFF1C7 /* The_Apocalypse_GameUITests.swift */; };
 		177943CC279B4E4E00FFF1C7 /* The_Apocalypse_GameUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177943CB279B4E4E00FFF1C7 /* The_Apocalypse_GameUITestsLaunchTests.swift */; };
+		177943D9279CBB1900FFF1C7 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177943D8279CBB1900FFF1C7 /* GameScene.swift */; };
+		177943DC279CBB3200FFF1C7 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 177943DB279CBB3200FFF1C7 /* SpriteKit.framework */; };
+		177943DE27A314CA00FFF1C7 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177943DD27A314CA00FFF1C7 /* File.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,9 @@
 		177943C5279B4E4E00FFF1C7 /* The Apocalypse GameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "The Apocalypse GameUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		177943C9279B4E4E00FFF1C7 /* The_Apocalypse_GameUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = The_Apocalypse_GameUITests.swift; sourceTree = "<group>"; };
 		177943CB279B4E4E00FFF1C7 /* The_Apocalypse_GameUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = The_Apocalypse_GameUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		177943D8279CBB1900FFF1C7 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		177943DB279CBB3200FFF1C7 /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
+		177943DD27A314CA00FFF1C7 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				177943DC279CBB3200FFF1C7 /* SpriteKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +85,7 @@
 				177943BE279B4E4E00FFF1C7 /* The Apocalypse GameTests */,
 				177943C8279B4E4E00FFF1C7 /* The Apocalypse GameUITests */,
 				177943AC279B4E4C00FFF1C7 /* Products */,
+				177943DA279CBB3100FFF1C7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -96,8 +104,10 @@
 			children = (
 				177943AE279B4E4C00FFF1C7 /* The_Apocalypse_GameApp.swift */,
 				177943B0279B4E4C00FFF1C7 /* ContentView.swift */,
+				177943D8279CBB1900FFF1C7 /* GameScene.swift */,
 				177943B2279B4E4E00FFF1C7 /* Assets.xcassets */,
 				177943B4279B4E4E00FFF1C7 /* Preview Content */,
+				177943DD27A314CA00FFF1C7 /* File.swift */,
 			);
 			path = "The Apocalypse Game";
 			sourceTree = "<group>";
@@ -125,6 +135,14 @@
 				177943CB279B4E4E00FFF1C7 /* The_Apocalypse_GameUITestsLaunchTests.swift */,
 			);
 			path = "The Apocalypse GameUITests";
+			sourceTree = "<group>";
+		};
+		177943DA279CBB3100FFF1C7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				177943DB279CBB3200FFF1C7 /* SpriteKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,6 +275,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				177943D9279CBB1900FFF1C7 /* GameScene.swift in Sources */,
+				177943DE27A314CA00FFF1C7 /* File.swift in Sources */,
 				177943B1279B4E4C00FFF1C7 /* ContentView.swift in Sources */,
 				177943AF279B4E4C00FFF1C7 /* The_Apocalypse_GameApp.swift in Sources */,
 			);
@@ -424,6 +444,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -452,6 +474,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
